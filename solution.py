@@ -123,7 +123,8 @@ def ping(host, timeout=1):
         print(delay)
         time.sleep(1)  # one second
     if (data[0] == "Different Packet."):
-        return ['0', '0.0', '0', '0.0']
+        result = ['0', '0.0', '0', '0.0']
+        return result
     packet_min = np.amin(data)
     packet_max = np.amax(data)
     packet_avg = np.mean(data)
