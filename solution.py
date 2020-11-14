@@ -128,7 +128,7 @@ def ping(host, timeout=1):
     packet_max = np.amax(data)
     packet_avg = np.mean(data)
     stdev_var = np.std(data)
-    vars = [str(round(packet_min, 2)), str(round(packet_avg, 2)), str(round(packet_max, 2)),str(round(stdev(stdev_var), 2))]
+    vars = [str(round(packet_min, 2)), str(round(packet_avg, 2)), str(round(packet_max, 2)),str(round(stdev_var, 2))]
     
     return vars
 
